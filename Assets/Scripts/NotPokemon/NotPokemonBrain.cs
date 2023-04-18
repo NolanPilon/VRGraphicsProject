@@ -43,7 +43,7 @@ public class NotPokemonBrain : MonoBehaviour
     void Wander()
     {
         float wanderRadius = 10;
-        float wanderDistance = 10;
+        float wanderDistance = 5;
         float wanderJitter = 1;
 
         wanderTarget += new Vector3(Random.Range(-1.0f, 1.0f) * wanderJitter,
