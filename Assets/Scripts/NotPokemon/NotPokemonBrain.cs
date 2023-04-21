@@ -9,6 +9,7 @@ public class NotPokemonBrain : MonoBehaviour
     NavMeshAgent agent;
     public GameObject target;
     public float safety;
+    public CreatureType creature;
 
     private float timer = 0;
     private Vector3 startScale;
@@ -76,7 +77,8 @@ public class NotPokemonBrain : MonoBehaviour
 
         //end of timer
         if(timer > 1)
-        {
+        {   // Update HUD
+            GameManager.Instance.catchNotPokemon(creature);
             Destroy(gameObject);
         }
     }
@@ -107,7 +109,7 @@ public class NotPokemonBrain : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-          
+            Destroy(other.gameObject);
             caught = true;
         }
     }

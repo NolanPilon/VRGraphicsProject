@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1725690090657945861}
   - component: {fileID: 1723123575843902502}
   - component: {fileID: 7503250466059576869}
+  - component: {fileID: 919132149409981410}
   m_Layer: 0
   m_Name: yipee
   m_TagString: Pokemon
@@ -140,8 +141,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 2069739732356842431}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.74
-  m_Speed: 3.5
+  m_Radius: 1.06
+  m_Speed: 1.94
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -149,10 +150,25 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.93
-  m_BaseOffset: -0.06
+  m_Height: 2.44
+  m_BaseOffset: -0.18
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &919132149409981410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069739732356842431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5a9bdee606fb54caa21e90dab00632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  safety: 3
+  creature: {fileID: 11400000, guid: 5caae229c24c4814daa4aeceb5fcabe6, type: 2}
 --- !u!1 &2504409425492734190
 GameObject:
   m_ObjectHideFlags: 0
