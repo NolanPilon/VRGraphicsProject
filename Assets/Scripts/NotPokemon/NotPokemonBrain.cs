@@ -20,7 +20,6 @@ public class NotPokemonBrain : MonoBehaviour
     {
         agent = this.GetComponent<NavMeshAgent>();
         startScale = transform.localScale;
-
     }
 
     void Run(Vector3 location)
@@ -79,6 +78,7 @@ public class NotPokemonBrain : MonoBehaviour
         if(timer > 1)
         {   // Update HUD
             GameManager.Instance.catchNotPokemon(creature);
+            GameManager.Instance.ballCount--;
             Destroy(gameObject);
         }
     }

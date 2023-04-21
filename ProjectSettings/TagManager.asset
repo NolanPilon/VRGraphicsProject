@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Pokemon
+  - Bag
   layers:
   - Default
   - TransparentFX
